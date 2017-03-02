@@ -1,47 +1,11 @@
-*{
-    box-sizing: border-box;
-    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    background-color: #f1f1f1;
-    
-}
-
-.heading-1{
-    font-size: 5.5em;
-    font-weight: 300;
-    line-height: 1.1;
-}
-.heading-2{
-    color: #0275d8!important;
-    font-size: 3.5em;
-}
-
-
-
-img{
-    border: 1px solid #0275d8;
-    display: block !important;
-    border-radius: 2%;
-    margin-right: auto !important;
-    margin-left: auto !important;
-}
-
-figcaption{
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    font-size: 1.2em;
-    position: static;
-}
-
-.img-div{
+body{
     width: 100%;
-    display: block !important;
-    position: static;
+    font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+    background: #eee;
 }
-
-.timeline-heading{
-    margin: 100px auto 15px auto;
-    
+table{
+    background: #fff;
+}
+article .blockquote{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
