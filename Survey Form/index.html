@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+       <h1 id="title" class="mt-4">
+                Survey Form
+            </h1>
+            
+            <div class="form-outer mt-5 ">
+                <p id="description">
+                    Let us know how we can improve this Page
+                </p>
+                  
+                   <form action="#" id="surey-form">
+                      
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="firstName">
+                              * First Name:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <input type="text" placeholder="Enter your first name" required>
+                          </div>
+                      </div> 
+                       
+                       <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="middleName">
+                              Middle Name:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <input type="text" placeholder="Enter your middle name" >
+                          </div>
+                      </div>     
+                     
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="lastName">
+                              * Last Name:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <input type="text" placeholder="Enter your last name" required>
+                          </div>
+                      </div>   
+                        
+                      
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="email">
+                              * Email:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <input type="email" placeholder="Enter your email" required>
+                          </div>
+                      </div>   
+                      
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="age">
+                              * Age:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <input type="text" placeholder="Enter your age" required>
+                          </div>
+                      </div>
+                      
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="position">
+                              Which option best describes your current role?
+                          </label>
+                          </div>
+                          <div class="input ">
+                              <select id="dropdown" name="position" class="dropdown">
+                                  <option disabled value="Select an option">Select an option</option>
+                                  <option value="student">Student</option>
+                                  <option value="Professional">Professional</option>
+                                  <option value="web-developer">Web Developer</option>
+                                  <option value="full-time-job">Full Time Job</option>
+                                  <option value="full-time-learner">Full Time Learner</option>
+                                  <option value="prefer-not">Prefer not to say</option>
+                                  <option value="other">Other</option>
+                              </select>
+                          </div>
+                      </div>
+                      
+                    <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="recommendation">
+                              * How likely is that you would recommend Codepen to a friend?
+                          </label>
+                          </div>
+                          <div class="input">
+                          <ul style="list-style: none;">
+                              <li class="radio">
+                                  <label><input name="radio-buttons" type="radio" value="1" class="userRatings"> Surely </label>
+                              </li>
+                              <li class="radio">
+                                  <label><input name="radio-buttons" type="radio" value="2" class="userRatings"> Maybe </label>
+                              </li>
+                              <li class="radio">
+                                  <label><input name="radio-buttons" type="radio" value="3" class="userRatings"> Not Sure </label>
+                              </li>
+                          </ul>
+                          </div>
+                      </div>
+                    
+                    
+                    <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="userViews">
+                              What do you like most in FCC:
+                          </label>
+                          </div>
+                          <div class="input">
+                              <select class="dropdown"
+                              name="candidate-likes" id="likes">
+                                  <option disabled selected value>Select an Option</option>
+                                  <option value="challenges">Challenges</option>
+                                  <option value="projects">Projects</option>
+                                  <option value="forum">Forum</option>
+                                  <option value="community">Community</option>
+                                  <option value="openSource">Open Source</option>
+                              </select>
+                          </div>
+                      </div>
+                                                    
+                
+                  <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="age">
+                              Things that should be improved in the coming days (Check all that apply):
+                          </label>
+                          </div>
+                          <div class="input">
+                              <ul id="improvements" style="list-style: none;">
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Front-end Projects</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Back-end Projects</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Data Visualization</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Challenges</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Open Source Community</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Gitter helps rooms</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Videos</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">City Meetups</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Wiki</label>
+                                  
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Forum</label>
+                                  <label><input name="improvements" type="checkbox" class="userRatings">Additional Courses</label>
+                                  
+                              </ul>
+                          </div>
+                      </div>
+                      
+                      <div class="rowFormInput">
+                          <div class="rowLabel">
+                          <label for="comments">
+                              Any Comments or Suggestions?
+                          </label>
+                          </div>
+                          <div class="input">
+                              <textarea name="comment" id="comments" class="input-field" placeholder="Enter your comment here..." style="height:50px;resize:vertical "></textarea>
+                          </div>
+                      </div>   
+                      
+                      <button id="submit" type="submit" class="btn btn-primary btn-info">Submit</button>
+                      
+                      
+                   </form>
+                    
+                
+            </div>
+    </div>
+    
+</body>
+</html>
