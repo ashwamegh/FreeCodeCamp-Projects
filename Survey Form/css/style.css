@@ -89,7 +89,9 @@ input {
     body{
         font-size: 1em;
     }
-    
+    .form-outer{
+        width: 80%;
+    }
     .rowLabel {
     text-align: left;
     display: block;
@@ -117,6 +119,9 @@ input {
 @media (max-width: 400px){
     body{
         font-size: 0.9em;
+    }
+    .form-outer{
+        width: 90%;
     }
     
 }
