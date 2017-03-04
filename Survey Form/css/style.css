@@ -1,168 +1,168 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Raleway', Helvetica, sans-serif;
-  background-color: #3498db;
-  color: rgba(0, 0, 0, 1);
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: #3498db;
+    color: rgba(0, 0, 0, 1);
 }
 
 #title {
-  font-size: 2.2em;
-  text-align: center !important;
-  line-height: 1.1;
-  font-weight: 800;
-  color: #fff;
+    font-size: 2.2em;
+    text-align: center !important;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #fff;
 }
 
 .mt-4 {
-  margin-top: 1.5rem !important;
+    margin-top: 1.5rem !important;
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+    margin-top: 3rem !important;
 }
 
 .form-outer {
-  text-align: center;
-  padding: 10px;
-  color: #000;
-  width: 75%;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 7px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    width: 75%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 7px;
 }
 
 .rowLabel {
-  text-align: right;
-  display: inline-block;
-  width: 40%;
-  padding: 5px;
-  vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
 }
 
 label {
-  display: block;
+    display: block;
 }
 
 .rowFormInput {
-  display: block;
-  position: static;
-  text-align: center;
-  margin-top: 20px;
+    display: block;
+    position: static;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .input {
-  display: inline-block;
-  width: 50%;
-  vertical-align: middle;
-  text-align: left;
-  padding: 5px;
-  position: static;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px;
+    position: static;
 }
 
 .dropdown {
-  height: 35px;
-  width: 160px;
-  border: 2px solid #c0c0c0;
-  border-radius: 2px;
-  font-size: .9em;
+    height: 35px;
+    width: 160px;
+    border: 2px solid #c0c0c0;
+    border-radius: 2px;
+    font-size: .9em;
 }
 
 option {
-  font-weight: normal;
-  display: block;
-  white-space: pre;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
 }
 
 input {
-  border: 1px solid #c0c0c0;
-  border-radius: 2px;
-  padding: 2px;
-  font-size: 0.9em;
-  font-family: inherit;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 0.9em;
+    font-family: inherit;
 }
 
 @media (max-width:536px) {
-  body {
-    font-size: 1em;
-  }
-  .form-outer {
-    width: 80%;
-  }
-  .rowLabel {
-    text-align: left;
-    display: block;
-    width: 100%;
-    vertical-align: middle;
-    margin-top: 10px;
-  }
-  .input {
-    display: block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-  }
-  textarea {
-    display: block;
-    margin: 10px;
-    width: 80%;
-    margin-left: 0px;
-  }
+    body {
+        font-size: 1em;
+    }
+    .form-outer {
+        width: 80%;
+    }
+    .rowLabel {
+        text-align: left;
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    .input {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    textarea {
+        display: block;
+        margin: 10px;
+        width: 80%;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 400px) {
-  body {
-    font-size: 0.9em;
-  }
-  .form-outer {
-    width: 90%;
-  }
+    body {
+        font-size: 0.9em;
+    }
+    .form-outer {
+        width: 90%;
+    }
 }
 
 .checklist {
-  display: block;
-  margin: 0px;
-  padding: 0px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
 
 #description {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .input-field {
-  height: 50px;
-  resize: vertical;
-  border-radius: 2px solid #c0c0c0;
+    height: 50px;
+    resize: vertical;
+    border-radius: 2px solid #c0c0c0;
 }
 
 .userRatings {
-  padding: 10px;
-  margin: 5px;
+    padding: 10px;
+    margin: 5px;
 }
 
 textarea {
-  font-family: Arial;
+    font-family: Arial;
 }
 
 ::-webkit-input-placeholder {
-  font-family: Arial;
+    font-family: Arial;
 }
 
 :-moz-placeholder {
-  font-family: Arial;
+    font-family: Arial;
 }
 
 ::-moz-placeholder {
-  font-family: Arial;
+    font-family: Arial;
 }
 
 :-ms-input-placeholder {
-  font-family: Arial;
+    font-family: Arial;
 }
