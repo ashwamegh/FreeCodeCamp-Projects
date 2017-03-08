@@ -1,60 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
     <title>Zephyr Bot</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/style.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link href="resources/css/style.css"  type="text/css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="assets/manifest.json">
     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#45dff4">
 
-</head>
-
-<body>
-
-<!--Header for the Zephyr-->
+  </head>
+  <body>
+    
     <header id="header">
-
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="header-description">
-      <a class="navbar-brand" href="#"><img id="header-img" src="assets/logo.png" alt="Zephyr bot logo">
-      <span class="header-title">Zephyr Bot</span>
-      <span class="accredition">Powered by ChatFuel<sup>TM</sup></span>
-      </a>
-  </div>
-
-  <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto  ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+      <nav id="nav-bar">
+          <div class="row">
+            <img id="header-img" class="logo" src="assets/logo.png" alt="Zephyr Logo">
+            <h4 id="logo-text">Zephyr Bot</h4>
+             <ul id="main-nav">
+                <li class="nav-link"><a href="">Features</a></li>
+                <li class="nav-link"><a href="">How it works</a></li>
+                <li class="nav-link"><a href="">Pricing</a></li>
+                <li class="nav-link"><a href="">Get started</a></li>                 
+             </ul>
+          </div>
+      </nav>
+      
+       <div class="hero-text-box">
+           <h1><span>Forget to Reply, Now Forget Replying.</span>
+           <br>Your Pocket Personal Assistant.</h1>
+           <a class="btn btn-full" href="#">Get started</a>
+           <a class="btn btn-ghost" href="#">Show me more</a>
+       </div>        
     </header>
-<!--End Of Header-->
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="assets/bootstrap.min.css" type="text/javascript"></script>
-</body>
-
+  
+  </body>
 </html>

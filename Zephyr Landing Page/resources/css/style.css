@@ -1,0 +1,158 @@
+/*
+Blue Color: #3498db
+*/
+
+/*---------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato','Arial',sans-serif;
+    background-color:#fff;
+    color: #000;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------------*/
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*--------HEADINGS------------*/
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    word-spacing: 4px;
+}
+
+h1 span{
+    font-size: 50%;
+}
+
+/*--------BUTTONS------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;    
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #3498db;
+    color: #3498db;
+    
+} 
+
+.btn:hover,
+.btn:active{
+    background-color: #217dbb;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #217dbb;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #217dbb;
+    color: #fff; 
+}
+
+
+/*--------HEADER------------*/
+
+#header {
+    transition: background-image 0.2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(66, 159, 222, 0.56), rgba(0, 0, 0, 0.7) ),url('img/hero.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 35px;
+}
+
+#logo-text{
+    font-family: 'Noto Sans';
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: 60px;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.nav-link{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-link a:hover,
+.nav-link a:active{
+    border-bottom: 3px solid #217dbb;
+}
+
