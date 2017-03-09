@@ -13,7 +13,7 @@ Blue Color: #3498db
 }
 
 html{
-    font-family: 'Lato','Arial',sans-serif;
+    font-family: 'Lato',Segoe UI,'Arial',sans-serif;
     background-color:#fff;
     color: #000;
     font-weight: 300;
@@ -31,22 +31,113 @@ html{
     margin: 0 auto;
 }
 
+section{
+    padding: 80px 0;
+
+}
+
+.box{
+    padding: 1%;
+}
+
 /*--------HEADINGS------------*/
+
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    font-weight: 300;   
+}
 
 h1{
     margin: 0;
     margin-bottom: 20px;
     font-size: 180%;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: #fff;
     word-spacing: 4px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+h2{
+    margin-bottom: 30px;
+    word-spacing: 2px;
+    font-size: 120%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #3498db;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 h1 span{
     font-size: 50%;
 }
+
+/*--------PARAGRAPHS----------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+}
+
+
+
+/*--------ICONS------------*/
+
+.icon-big{
+    font-size: 350%;
+    margin-bottom: 10px;
+    color: #3498db;
+    display: block;
+}
+
+/*---------------------------*/
+/*         SNAPSHOTS         */
+/*---------------------------*/
+
+
+.grid-showcase{
+    list-style:none;
+    width: 100%;
+    
+}
+
+.grid-showcase li{
+    display: block;
+    width: 25%;
+    float: left;    
+}
+
+.grid-photos{
+    width: 100%;
+    margin: 0;
+}
+
+.grid-photos img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 /*--------BUTTONS------------*/
 
@@ -118,7 +209,7 @@ h1 span{
 }
 
 #logo-text{
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans', Segoe UI;
     display: inline-block;
     color: #fff;
     vertical-align: middle;
