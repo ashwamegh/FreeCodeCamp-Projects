@@ -111,9 +111,21 @@ h1 span{
 }
 
 /*---------------------------*/
-/*         SNAPSHOTS         */
+/*     FEATURES        */
 /*---------------------------*/
 
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+/*---------------------------*/
+/*     SNAPSHOTS GRID        */
+/*---------------------------*/
+
+.section-grid{
+    padding: 0;
+}
 
 .grid-showcase{
     list-style:none;
@@ -130,11 +142,21 @@ h1 span{
 .grid-photos{
     width: 100%;
     margin: 0;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .grid-photos img{
     width: 100%;
     height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.grid-photos img:hover{
+    opacity: 1;
+    transform: scale(1.03);
 }
 
 
