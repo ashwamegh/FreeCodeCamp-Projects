@@ -1,6 +1,9 @@
 /*
 Blue Color: #3498db
 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
 
 /*---------------------------------------*/
 /* BASIC SETUP */
@@ -19,6 +22,15 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
 /*---------------------------------------*/
@@ -159,7 +171,68 @@ h1 span{
     transform: scale(1.03);
 }
 
+/*---------------------------*/
+/*    HOW IT WORKS       */
+/*---------------------------*/
 
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    padding-right: 3%;
+    text-align: right;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 50px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    color: #3498db;
+    display: inline-block;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;    
+    margin-right: 25px;
+}
+
+
+.btn-app{
+    display: inline block;
+    height: 50px;
+    width: auto;
+    font-family: 'Montserrat','Lato','Noto Sans', sans-serif;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 90%;
+    padding-right: 25px;
+}
+
+.btn-app i{
+    font-size: 130%;
+    margin-left:10px;
+    margin-right: 5px;
+}
 
 /*--------BUTTONS------------*/
 
@@ -209,7 +282,7 @@ h1 span{
 
 #header {
     transition: background-image 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(66, 159, 222, 0.56), rgba(0, 0, 0, 0.7) ),url('img/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7) /*,rgba(66, 159, 222, 0.56)*/, rgba(0, 0, 0, 0.7) ),url('img/hero.jpg') fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
