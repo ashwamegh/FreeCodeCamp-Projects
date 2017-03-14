@@ -229,9 +229,58 @@ h1 span{
 }
 
 .btn-app i{
-    font-size: 130%;
+    font-size: 180%;
     margin-left:10px;
     margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+
+/*---------------------------*/
+/*    CITIES       */
+/*---------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color: #3498db;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* Secrets to aling text & icons */
+    line-height: 120%;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+
+/*--------LINKS------------*/
+
+.tweet:link,
+.tweet:active{
+    color: #3498db;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #3498db;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.tweet:hover,
+.tweet:visited{
+    color: #217dbb;
+    border-bottom: 1px solid transparent;
 }
 
 /*--------BUTTONS------------*/
