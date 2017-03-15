@@ -1,6 +1,10 @@
 /*
 Blue Color: #3498db
 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,300i,400i,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
 
 /*---------------------------------------*/
 /* BASIC SETUP */
@@ -19,6 +23,15 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
 /*---------------------------------------*/
@@ -159,7 +172,158 @@ h1 span{
     transform: scale(1.03);
 }
 
+/*---------------------------*/
+/*    HOW IT WORKS       */
+/*---------------------------*/
 
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    padding-right: 3%;
+    text-align: right;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 50px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    color: #3498db;
+    display: inline-block;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;    
+    margin-right: 25px;
+}
+
+
+.btn-app{
+    display: inline block;
+    height: 50px;
+    width: auto;
+    font-family: 'Montserrat','Lato','Noto Sans', sans-serif;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 90%;
+    padding-right: 25px;
+}
+
+.btn-app i{
+    font-size: 180%;
+    margin-left:10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+
+/*---------------------------*/
+/*    CITIES       */
+/*---------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color: #3498db;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* Secrets to aling text & icons */
+    line-height: 120%;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+
+/*---------------------------*/
+/*    TESTIMONIALS       */
+/*---------------------------*/
+
+.section-testimonials{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/customer-back.jpg') fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+blockquote{
+   padding: 2%;
+   font-style: italic;
+   line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    display: block;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*--------LINKS------------*/
+
+.tweet:link,
+.tweet:active{
+    color: #3498db;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #3498db;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.tweet:hover,
+.tweet:visited{
+    color: #217dbb;
+    border-bottom: 1px solid transparent;
+}
 
 /*--------BUTTONS------------*/
 
@@ -209,7 +373,7 @@ h1 span{
 
 #header {
     transition: background-image 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(66, 159, 222, 0.56), rgba(0, 0, 0, 0.7) ),url('img/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7) /*,rgba(66, 159, 222, 0.56)*/, rgba(0, 0, 0, 0.7) ),url('img/hero.jpg') fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
