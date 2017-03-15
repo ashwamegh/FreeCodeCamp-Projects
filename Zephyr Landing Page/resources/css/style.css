@@ -3,7 +3,10 @@ Blue Color: #3498db
 */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Lato:100i,300i,400i,700i');
+=======
+>>>>>>> refs/remotes/origin/master
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
 
 /*---------------------------------------*/
@@ -197,6 +200,7 @@ h1 span{
 .works-step{
     margin-bottom: 50px;
 }
+<<<<<<< HEAD
 
 .works-step div{
     color: #3498db;
@@ -304,6 +308,74 @@ cite img{
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+=======
+
+.works-step div{
+    color: #3498db;
+    display: inline-block;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;    
+    margin-right: 25px;
+}
+
+
+.btn-app{
+    display: inline block;
+    height: 50px;
+    width: auto;
+    font-family: 'Montserrat','Lato','Noto Sans', sans-serif;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 90%;
+    padding-right: 25px;
+}
+
+.btn-app i{
+    font-size: 180%;
+    margin-left:10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+
+/*---------------------------*/
+/*    CITIES       */
+/*---------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color: #3498db;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* Secrets to aling text & icons */
+    line-height: 120%;
+    margin-top: -5px;
+>>>>>>> refs/remotes/origin/master
     vertical-align: middle;
 }
 
