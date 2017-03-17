@@ -24,12 +24,13 @@
       <nav id="nav-bar">
           <div class="row">
             <img id="header-img" class="logo" src="assets/logo.png" alt="Zephyr Logo">
+            <img class="logo-black" src="assets/logo2.png" alt="Zephyr Logo">
             <h4 id="logo-text">Zephyr Bot</h4>
              <ul id="main-nav">
-                <li class="nav-link"><a href="">Features</a></li>
-                <li class="nav-link"><a href="">How it works</a></li>
-                <li class="nav-link"><a href="">Pricing</a></li>
-                <li class="nav-link"><a href="">Get started</a></li>                 
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#works">How it works</a></li>
+                <li class="nav-link"><a href="#plans">Pricing</a></li>
+                <li class="nav-link"><a href="#form">Get started</a></li>                 
              </ul>
           </div>
       </nav>
@@ -37,15 +38,15 @@
        <div class="hero-text-box">
            <h1><span>Forget to Reply, Now Forget Replying.</span>
            <br>Your Pocket Personal Assistant.</h1>
-           <a class="btn btn-full" href="#">Get started</a>
-           <a class="btn btn-ghost" href="#">Show me more</a>
+           <a class="btn btn-full js--scroll-to-plans" href="#">Get started</a>
+           <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
        </div>        
     </header>
     
     
     <!-- Start of Section features ---->
     
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>
                 Zephyr Mnemonics
@@ -91,7 +92,7 @@
     
     <!-- Start of Grid Section -->
     
-    <section class="section-grid">
+    <section class="section-grid" id="events">
        <ul class="grid-showcase clearfix">
            
            
@@ -151,7 +152,7 @@
     <!-- Start of How it Works Seciton-->
     
     
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
@@ -191,7 +192,7 @@
     
     <!-- Start Of Cities Section -->
     
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're Currently in these cities.</h2>
         </div>
@@ -316,7 +317,7 @@
  
 <!-- Start of Price Plans Section-->
 
- <section class="section-plans">
+ <section class="section-plans js--section-plans" id="plans">
      <div class="row">
          <h2>Our Price Plans</h2>
      </div>
@@ -391,7 +392,7 @@
  
 <!-- Start of Form Section-->
  
- <section class="section-form">
+ <section class="section-form" id="form">
      <div class="row">
          <h2>We're happy to hear from you</h2>
      </div>
@@ -495,9 +496,12 @@
  
 <!-- End Of Footer Section-->
   
-      </body>
-      
+      <script  src="https://code.jquery.com/jquery-3.2.0.min.js"  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="  crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+      <script type="text/javascript" src= "vendors/js/jquery.waypoints.min.js"></script>
+      <script type="text/javascript" src="resources/js/script.js"></script>
+      </body>
+     
 </html>

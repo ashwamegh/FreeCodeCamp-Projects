@@ -575,6 +575,16 @@ input[type = submit]{
     width: auto;
     float: left;
     margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.logo-black{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    border-radius: 10px;
+    display: none;
 }
 
 #logo-text{
@@ -583,12 +593,13 @@ input[type = submit]{
     color: #fff;
     vertical-align: middle;
     margin-left: 15px;
-    margin-top: 60px;
+    margin-top: 55px;
     font-size: 90%;
     text-transform: uppercase;
     font-weight: 300;
 }
 
+/*  Main Navigation */
 #main-nav{
     float: right;
     list-style: none;
@@ -617,3 +628,36 @@ input[type = submit]{
     border-bottom: 3px solid #217dbb;
 }
 
+/*  Sticky Navigation*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky #main-nav {
+    margin-top: 15px;
+}
+
+.sticky #main-nav a:link,
+.sticky #main-nav a:visited,
+.sticky #logo-text{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 16px 0;
+}
+.sticky #logo-text{
+    display: none;
+}
+.sticky .nav-link{
+    font-size: 90%;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
