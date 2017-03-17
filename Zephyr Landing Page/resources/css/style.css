@@ -20,13 +20,15 @@ Blue Color: #3498db
     outline: none;
 }
 
-html{
+html,
+body{
     font-family: 'Lato',Segoe UI,'Arial',sans-serif;
     background-color:#fff;
     color: #000;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix{zoom:1}
@@ -167,12 +169,17 @@ h1 span{
     width: 100%;
     height: auto;
     opacity: 0.7;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .grid-photos img:hover{
     opacity: 1;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -276,6 +283,7 @@ h1 span{
 /*---------------------------*/
 
 .section-testimonials{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/customer-back.jpg') fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/customer-back.jpg') fixed;
     background-size: cover;
     color: #fff;
@@ -431,6 +439,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -455,6 +464,7 @@ footer p{
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram{
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -479,6 +489,7 @@ footer p{
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #3498db;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -499,6 +510,7 @@ input[type = submit]{
     text-decoration: none;
     border-radius: 200px;
     color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;    
 }
 
@@ -540,7 +552,9 @@ input[type = submit]{
 /*--------HEADER------------*/
 
 #header {
+    -webkit-transition: background-image 0.2s;
     transition: background-image 0.2s;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) /*,rgba(66, 159, 222, 0.56)*/, rgba(0, 0, 0, 0.7) ),url('img/hero.jpg') fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.7) /*,rgba(66, 159, 222, 0.56)*/, rgba(0, 0, 0, 0.7) ),url('img/hero.jpg') fixed;
     height: 100vh;
     background-size: cover;
@@ -552,6 +566,7 @@ input[type = submit]{
     width: 1140px;
     top: 59%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -593,6 +608,7 @@ input[type = submit]{
     font-size: 90%;
     padding: 8px 0;
     border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
