@@ -1,7 +1,7 @@
-##FCC: Survey Form
+## FCC: Survey Form
 
-###Visit the page: https://shashank7200.github.io/FreeCodeCamp-Projects/Survey%20Form/
+### Visit the page: https://shashank7200.github.io/FreeCodeCamp-Projects/Survey%20Form/
 
-###Screenshot:
+### Screenshot:
 
 ![alt-tag](images/screenshot.png)
