@@ -1,0 +1,193 @@
+/* Big tablets from Screen 1024px to 1200px (Width smaller than 1140px row)*/
+@media only screen and (max-width : 1200px){
+    
+    .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+    }
+    
+    .row{ padding: 0 2%;}
+    
+    
+.video-embed iframe{
+    width: 60%;
+    height: 68vh;
+   }
+ 
+
+}
+/* Medium Phones & tablets from Screen 768px to 1023px*/
+@media only screen and (max-width : 1023px){
+    
+    body {font-size: 18px; }
+    section { padding: 60px 0;}
+    
+    
+   .video-embed iframe{
+    width: 100%;
+    height: 75vh;
+   }
+    
+    .long-copy{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    }
+    
+    .steps-box {
+        margin-top: 10px;
+    }
+    .steps-box:last-child{
+        margin-top: 10px;
+    }
+    
+    .works-step{
+        margin-top: 40px;
+        font-size: 86%;
+    }
+    .works-step:last-of-type{ margin-bottom: 60px; }
+    .btn-app{ 
+        font-size: 86%;
+        height: 40px;
+        padding: 10px;
+    }
+    .btn-app i{ font-size: 160%; }
+    .app-screen{
+    width: 50%;
+   } 
+    .icon-small{
+        width: 20px;
+    }
+    .city-feature{ font-size: 90%; }
+    .plan-box{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .plan-price{
+        font-size: 250%;
+    }
+    .plan-box ul li{
+        font-size: 90%;
+    }
+    
+    .contact-form{
+        width: 80%;
+    }
+}
+
+/* Small Phones  & Tablets from Screen 481px to 767px*/
+@media only screen and (max-width : 767px){
+    
+    body{ font-size: 16px; }
+    section{ padding: 30px 0; }
+    
+    .video-embed iframe{
+    width: 100%;
+    height: 50vh;
+   }
+    
+    .row,
+    .hero-text-box{
+        padding: 0 4%;        
+    }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    #main-nav{
+        display: none;
+    }
+    
+    #logo-text{
+        display: none;
+    }
+    
+    #main-nav{
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    
+    #main-nav li{
+        display: block;
+    }
+    #main-nav li a:link,
+    #main-nav li a:visited{
+        display: block;
+        border: 0;     
+        padding: 5px 0;
+        font-size: 100%;
+    }
+    
+    .mobile-nav-icon{
+        display: inline-block;
+    }
+    
+    .sticky #main-nav {
+        margin-top: 5px;
+    }
+
+    .sticky #main-nav a:link,
+    .sticky #main-nav a:visited{
+        padding: 10px 0;
+    }
+    
+    .sticky .mobile-nav-icon{  margin-top: 13px; }
+    .sticky .mobile-nav-icon i{ color: #555; }
+
+    
+    .long-copy{
+    width: 100%;
+    margin-left: 0;
+    }
+    
+    h1{ font-size: 180%;}
+    h2{ font-size: 150%;}
+    
+    .works-step{
+        margin-bottom: 20px;
+        font-size: 86%;
+    }
+    .works-step:last-of-type{ margin-bottom: 20px; }
+    .works-step div{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+    
+    .steps-box:first-child{
+        text-align: center;
+    }
+    
+    .app-screen{
+        width: 40%;
+    }
+    .plan-box ul li{
+        font-size: 100%;
+    }
+    
+}
+
+
+/* Small Phones from Screen 0px to 480px*/
+@media only screen and (max-width : 480px){
+    
+    .video-embed iframe{
+    width: 100%;
+    height: 40vh;
+   }
+    
+    
+    section{ 
+        padding: 25px 0;
+    }
+    
+    .contact-form{
+        width: 100%;
+    }
+    
+}
