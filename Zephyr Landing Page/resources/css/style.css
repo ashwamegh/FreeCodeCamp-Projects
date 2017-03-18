@@ -628,6 +628,23 @@ input[type = submit]{
     border-bottom: 3px solid #217dbb;
 }
 
+
+/*  Mobile Navigation*/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 47px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    color: #fff;
+    font-size: 200%;
+}
+
+
+
 /*  Sticky Navigation*/
 .sticky{
     position: fixed;
@@ -661,3 +678,26 @@ input[type = submit]{
 
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
+
+/*************************/
+/* Animations Scroll *****/
+/*************************/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+    opacity: 1;
+}
