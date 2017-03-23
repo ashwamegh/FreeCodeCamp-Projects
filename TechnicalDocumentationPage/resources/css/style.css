@@ -1,10 +1,10 @@
-/*Heading Color: #4d4e53 */
-/*Link Color: */
+/* Color: #4d4e53 */
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:100i,300i,400i,700i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
 
 /*******************/
 /*   BASE CONTENT  */
@@ -16,11 +16,21 @@
 
 html,
 body{
-    font-size: 16px;
-    font-family: 'Lato',Segoe UI,'Arial',sans-serif;
-    background-color: #fff;
-    color: #4d4e53;
+    font-family: 'Oxygen','Lato',Segoe UI,'Arial',sans-serif;
+    background-color: #f6f6f6;
     height: 100%;
+    line-height: 1.5;
+    min-width: 290px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
 
@@ -36,6 +46,12 @@ header{
 #main-doc header{
     text-align: left;
     margin: 0px;
+    color: #000;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
 }
 
 
@@ -44,42 +60,53 @@ header{
 /*******************/
 
 #navbar {
+    background-color: #fff;
     min-width: 290px;
-    width: 310px;
+    width: 320px;
     min-width: 290px;
     height: 100%;
     top: 0px;
+    height: 100%;
     left: 0px;
-    border-right: 2px solid rgba(195, 195, 195, 0.89);
+    border-right: 2px solid rgba(116, 117, 121, 0.55);
     position: fixed;
-    float: left;
     line-height: 1.5;
-    color: #4d4e53;
 }
 
 #navbar a{
     text-decoration: none;
-    color: #4d4e53;
     cursor: pointer;
     width: 100%;
 }
+
 #navbar ul{
+    left: 0px;
     list-style: none;
     width: 100%;
-    flex: 1 1 0; /* flex: 1, which you had before, is equivalent but doesn't work */
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
+    height: 88%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-weight: 300;
 }
 
-#navbar ul li{
+#navbar li{
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.57);
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    padding: 8px;
+    padding-left: 30px;
+    left: 0px;
     font-size: 1.2em;
-    padding: 10px;
-    padding-left: 20px;
-}
-
-#navbar .active{
-    color: #fff;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    line-height: 1.5;
+    text-indent: 1.8;
+    color: #4d4e53;
+    letter-spacing: 1px;
 }
 
 #navbar header{
@@ -89,7 +116,7 @@ header{
     text-align: center;
     top: 0px;
     left:  0px;
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 
 
@@ -98,10 +125,37 @@ header{
 /*******************/
 
 #main-doc{
+    background-color: #fff;
     padding: 20px;
-    margin-left: 310px;
+    margin-left: 320px;
     height: auto;
     position: absolute;
-    float: right;
+    letter-spacing: 1px;
+    color: #4d4e53;
 }
 
+.container{
+    width: 100%;
+    height: auto;
+}
+
+section article {
+    margin: 15px;
+    font-size: 0.96em;
+}
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code{
+    color: #000;
+    display: block;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}

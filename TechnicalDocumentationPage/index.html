@@ -1,57 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>HTML Documentation</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <link rel="stylesheet" href="resources/css/style.css">
-    </head>
-    
-    <body>
+
+<head>
+    <title>HTML Documentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/resources/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/resources/img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/resources/img/manifest.json">
+    <link rel="mask-icon" href="/resources/img/safari-pinned-tab.svg" color="#da532c">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
+    <meta name="msapplication-config" content="/resources/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css"> </head>
+
+<body>
+    <!--  Sidebar    -->
+    <nav id="navbar" class="clearfix">
+        <header>HTML Documentation</header>
+        <ul class="list-group">
+            <a rel="nofollow" class="nav-link list-group-item active" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#what-you-should-already-know">
+                <li>What you should already know</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#anatomy-of-an-html">
+                <li>Anatomy of an HTML element</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#nesting-elements">
+                <li>Nesting elements</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+            <a rel="nofollow" class="nav-link list-group-item list-group-item-action" href="#introduction">
+                <li>Introduction</li>
+            </a>
+        </ul>
+    </nav>
+    <!--  Main Doc Screen   -->
+    <main id="main-doc">
+       
+       
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>HTML is not a programming language; it is a markup language, and is used to tell your browser how to display the webpages you visit. It can be as complicated or as simple as the web designer wishes it to be.</p>
+                <p>HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or an image a hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on. For example, take the following line of content:</p> <code>
+                        My cat is very grumpy
+                    </code>
+                <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph tag (&lt;p&gt;) element:</p> <code>&lt;p&gt; My cat is very grumpy &lt;/p&gt;</code> </article>
+        </section>
         
-        <!--  Sidebar    -->
-        <nav id="navbar">
-            <header>HTML Documentation</header>
-            <ul class="list-group">
-                <a rel="nofollow"  class="nav-link list-group-item active" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                <a rel="nofollow"  class="nav-link list-group-item list-group-item-action" href="#introduction"> <li>Introduction</li></a>
-                
-                
-            </ul>
-        </nav>
+        
+        <section class="main-section" id="what-you-should-already-know">
+            <header>What you should already know</header>
+            <article> 
+            <p>This guide assumes you have the following basic background:</p>
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Knowledge of Google-fu</li>
+            </article>
+        </section>
         
         
-        <!--  Main Screen   -->
-        <main id="main-doc">
-            <section id="introduction">
-                <header>Introduction</header>
-                <article></article>
-            </section>
-        </main>
+        <section class="main-section" id="anatomy-of-an-html">
+            <header>Anatomy of an HTML element</header>
+            <article>
+             
+             <p>Let's explore this paragraph element a bit further.</p>
+             <p>The main parts of our element are:</p>
+             <ol>
+                 <li><strong>The opening tag: </strong>This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins, or starts to take effect — in this case where the start of the paragraph is.</li>
+                 <li><strong>The closing tag: </strong>This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.</li>
+                 <li><strong>The content: </strong>This is the content of the element, which in this case is just text.</li>
+                 <li><strong>The element: </strong>The opening tag, plus the closing tag, plus the content, equals the element.</li>
+             </ol>
+             <p>Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name, and editor-note is the attribute value. The class attribute allows you to give the element an identifier that can be later used to target the element with style information and other things.</p>
+             <p>An attribute should always have:</p>
+             <ol>
+                 <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+                 <li>The attribute name, followed by an equals sign</li>
+                 <li>Opening and closing quote marks wrapped around the attribute value. </li>
+             </ol>
+             </article>
+        </section>
         
         
-    </body>
+        <section class="main-section" id="nesting-elements">
+            <header>Nesting elements</header>
+            <article>
+            <p>You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is VERY grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:</p>
+            <code>&lt;p&gt; My cat is &lt;strong&gt; <strong>very</strong> &lt;/strong&gt; grumpy.&lt;/p&gt;</code>
+             <p>You do however need to make sure that your elements are properly nested: in the example above we opened the <p> element first, then the &lt;strong&gt; element, therefore we have to close the &lt;strong&gt; element first, then the &lt;p&gt;. The following is incorrect</p>
+             <code>&lt;p&gt; My cat is &lt;strong&gt; very grumpy. &lt;/p&gt; &lt;/strong&gt;</code> 
+             <p>The elements have to open and close correctly so they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, and you may well get unexpected results. So don't do it!</p>            
+              </article>
+        </section>
+        
+        
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article> </article>
+        </section>
+        
+        
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article> </article>
+        </section>
+        
+        
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article> </article>
+        </section>
+        
+        
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article> </article>
+        </section>
+        
+        
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article> </article>
+        </section>
+        
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src= "vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js" type="text/javascript"></script>
+</body>
+
 </html>

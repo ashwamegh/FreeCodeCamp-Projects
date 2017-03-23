@@ -1,0 +1,43 @@
+@media only screen and (max-width : 767px){
+    
+    html,body{
+        background-color: #f6f6f6;
+    }
+    
+    #navbar{
+        position: static;
+        background-color: #fff;
+        top: 0;
+        width: 100%;
+        max-height: 275px;
+        z-index: 1;
+        border: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    #navbar ul{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 1px solid;
+        height: 207px;
+        font-weight: 400;
+        border-bottom: 2px solid;
+    }
+    
+    #navbar ul li{
+        padding-left: 45px;
+        border-left: 0;
+        color: #4d4e53;
+    }
+    
+    #main-doc{
+        margin-left: 0;
+        position: relative;
+        margin-top: 30px;
+    }
+}
