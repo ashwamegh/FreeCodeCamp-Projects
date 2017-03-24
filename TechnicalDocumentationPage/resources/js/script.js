@@ -1,5 +1,4 @@
 //Scroll Animations for Navigation Links
-
 $(document).ready(function () {
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {

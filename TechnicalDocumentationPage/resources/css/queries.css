@@ -1,10 +1,9 @@
-@media only screen and (max-width : 767px){
-    
-    html,body{
+@media only screen and (max-width: 767px) {
+    html,
+    body {
         background-color: #f6f6f6;
     }
-    
-    #navbar{
+    #navbar {
         position: static;
         background-color: #fff;
         top: 0;
@@ -17,8 +16,7 @@
         overflow-y: auto;
         overflow-x: hidden;
     }
-    
-    #navbar ul{
+    #navbar ul {
         position: absolute;
         margin: 0;
         padding: 0;
@@ -28,16 +26,20 @@
         font-weight: 400;
         border-bottom: 2px solid;
     }
-    
-    #navbar ul li{
+    #navbar ul li {
         padding-left: 45px;
         border-left: 0;
         color: #4d4e53;
     }
-    
-    #main-doc{
+    #main-doc {
         margin-left: 0;
         position: relative;
         margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #demo {
+        width: 60%;
     }
 }

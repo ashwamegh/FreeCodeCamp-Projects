@@ -7,16 +7,20 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
 
 /*******************/
+
+
 /*   BASE CONTENT  */
+
+
 /*******************/
 
-*{
-    box-sizing: border-box;    
+* {
+    box-sizing: border-box;
 }
 
 html,
-body{
-    font-family: 'Oxygen','Lato',Segoe UI,'Arial',sans-serif;
+body {
+    font-family: 'Oxygen', 'Lato', Segoe UI, 'Arial', sans-serif;
     background-color: #f6f6f6;
     height: 100%;
     line-height: 1.5;
@@ -24,8 +28,11 @@ body{
     text-rendering: optimizeLegibility;
 }
 
-.clearfix{zoom:1}
-.clearfix:after{
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
     content: '.';
     display: block;
     clear: both;
@@ -35,28 +42,39 @@ body{
 
 
 /*******************/
+
+
 /*REUSABLE CONTENT */
+
+
 /*******************/
-header{
+
+header {
     font-size: 1.8em;
     margin: 10x;
     text-align: center;
 }
 
-#main-doc header{
+#main-doc header {
     text-align: left;
     margin: 0px;
     color: #000;
 }
 
-ul, menu, dir {
+ul,
+menu,
+dir {
     display: block;
     list-style-type: disc;
 }
 
 
 /*******************/
+
+
 /*   SIDEBAR       */
+
+
 /*******************/
 
 #navbar {
@@ -73,13 +91,13 @@ ul, menu, dir {
     line-height: 1.5;
 }
 
-#navbar a{
+#navbar a {
     text-decoration: none;
     cursor: pointer;
     width: 100%;
 }
 
-#navbar ul{
+#navbar ul {
     left: 0px;
     list-style: none;
     width: 100%;
@@ -91,7 +109,7 @@ ul, menu, dir {
     font-weight: 300;
 }
 
-#navbar li{
+#navbar li {
     display: list-item;
     border: 1px solid rgba(0, 0, 0, 0.57);
     border-bottom-width: 0px;
@@ -109,22 +127,30 @@ ul, menu, dir {
     letter-spacing: 1px;
 }
 
-#navbar header{
+#navbar header {
     margin: 10px;
     padding: 5px;
     width: 100%;
     text-align: center;
     top: 0px;
-    left:  0px;
+    left: 0px;
     font-size: 1.8em;
 }
 
 
 /*******************/
+
+
 /* Main Doc Screen */
+
+
 /*******************/
 
-#main-doc{
+section {
+    margin-bottom: 40px;
+}
+
+#main-doc {
     background-color: #fff;
     padding: 20px;
     margin-left: 320px;
@@ -132,30 +158,76 @@ ul, menu, dir {
     position: absolute;
     letter-spacing: 1px;
     color: #4d4e53;
-}
-
-.container{
-    width: 100%;
-    height: auto;
+    margin-bottom: 30px;
 }
 
 section article {
     margin: 15px;
     font-size: 0.96em;
 }
+
 section li {
     margin: 15px 0px 0px 20px;
 }
 
-code{
+code {
     color: #000;
     display: block;
     text-align: left;
     word-break: normal;
+    white-space: pre-wrap;
     word-wrap: normal;
     line-height: 2;
-    background-color: #f7f7f7;
+    background-color: #f3f3f7;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+
+#demo {
+    width: 100%;
+    height: auto;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #076dd0;
+}
+
+table {
+    border-collapse: collapse;
+    display: table;
+    border: 2px solid #fff;
+    margin-bottom: 24px;
+    color: #3b3c40;
+    font-size: 14px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: middle;
+}
+
+th {
+    border: 2px solid #fff;
+    border-bottom: 2px solid #d4dde4;
+    background: #eaeef2;
+    background: rgba(212, 221, 228, .5);
+    padding: 2px 8px 4px;
+    font-size: 14px;
+    display: table-cell;
+}
+
+td {
+    border: 2px solid #fff;
+    box-shadow: inset 0 -1px 0 0 rgba(212, 221, 228, .5);
+    background-color: rgba(212, 221, 228, .25);
+    padding: 6px 8px;
+    text-align: left;
+}
+
+
 }
