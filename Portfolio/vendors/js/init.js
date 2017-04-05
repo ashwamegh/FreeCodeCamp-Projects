@@ -7,11 +7,11 @@ var o = {
 	},
 	diagram: function(){
 		var r = Raphael('diagram', 600, 600),
-			rad = 73,
+			rad = 77,
 			defaultText = 'Skills',
 			speed = 250;
 		
-		r.circle(300, 300, 85).attr({ stroke: 'none', fill: '#193340' });
+		r.circle(300, 300, 85).attr({ stroke: 'none', fill: '#34495e' });
 		
 		var title = r.text(300, 300, defaultText).attr({
 			font: '20px Arial',
@@ -38,18 +38,18 @@ var o = {
 				value = t.find('.percent').val(),
 				text = t.find('.text').text();
 			
-			rad += 30;	
-			var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 26 });
+			rad += 19;	
+			var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 16 });
 			
 			z.mouseover(function(){
-                this.animate({ 'stroke-width': 50, opacity: .75 }, 1000, 'elastic');
+                this.animate({ 'stroke-width': 30, opacity: .75 }, 1000, 'elastic');
                 if(Raphael.type != 'VML') //solves IE problem
 				this.toFront();
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					this.attr({ text: text + '\n' + value + '%' }).animate({ opacity: 1 }, speed, '<');
 				});
             }).mouseout(function(){
-				this.stop().animate({ 'stroke-width': 26, opacity: 1 }, speed*4, 'elastic');
+				this.stop().animate({ 'stroke-width': 16, opacity: 1 }, speed*4, 'elastic');
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					title.attr({ text: defaultText }).animate({ opacity: 1 }, speed, '<');
 				});	
