@@ -80,3 +80,22 @@ $('.js--wp-1').waypoint(function(direction){
     {
         offset:'50%;'
             });
+
+/****** Form Data collector ********/
+
+var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'shashank7200' + '@' + 'gmail' + '.' + 'com');
+
+
+
+$("input,textarea").focus(function () {
+          $(this).prev("label").hide();
+     });
+
+$("input,textarea").blur(function () {
+    if (!$(this).val() )
+          $(this).prev("label").show();
+    
+    else
+          $(this).prev("label").hide();
+     });

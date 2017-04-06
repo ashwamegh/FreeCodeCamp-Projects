@@ -281,7 +281,7 @@
                       <h2>Get in Touch</h2>
                       <p class="contact-description">I'm currently available for hire as well as for freelance work. If you have a project, or need help with a website, please get in touch.</p>
                       
-                      <form method="post">
+                      <form method="POST" id="contactform">
 
 					<p><label for="contact_name" style="opacity: 1;">Name...</label>
 					<input type="text" name="name" id="contact_name" value="" autocomplete="off" spellcheck="false" required></p>
@@ -291,10 +291,12 @@
 					
 					<p>
 						<label for="contact_question">Message... (10 character minimum)</label>
-						<textarea name="question" id="contact_question" required></textarea>
+						<textarea name="message" id="contact_question" required></textarea>
 					</p>
 					<p class="button"><input type="submit" value="Send It!"></p>
-
+					<input type="hidden" name="_subject" value="Website contact" />
+					<input type="hidden" name="_next" value="//mywebsite.com/thanks.html" />
+					<input type="text" name="_gotcha" style="display:none" />
 				</form>
                       
                       
