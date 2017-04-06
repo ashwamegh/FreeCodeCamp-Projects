@@ -1,0 +1,115 @@
+@media only screen and (min-width: 1056px) and (max-width: 1252px){
+	.masthead h1{
+    font-size: 50px;
+    line-height: 50px;
+	}
+	span.innerText{
+    font-size: 20px;
+    line-height:20px;
+}
+}
+
+@media only screen and (max-width: 1055px){
+	.masthead h1{
+    font-size: 50px;
+    line-height: 50px;
+	}
+	span.innerText{
+    font-size: 20px;
+    line-height:20px;
+}
+	nav{
+		width: auto;
+	}
+	.nav-social {
+		width: auto;
+	}
+	.project-tile-container .project-tile-image-container {
+		width: calc(48%);
+	}
+	
+	#content{
+	top:0;
+    left: 0;
+    margin: 0;
+	}
+	.legend{
+		width: 150px;
+	}
+	#diagram{
+		left:  -15%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.masthead h1{
+    font-size: 40px;
+    line-height: 40px;
+	}
+	span.innerText{
+    font-size: 10px;
+    line-height:10px;
+	}
+	.logo-text {
+    font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.legend{
+		display: none;
+	}
+	#diagram{
+		left: 10%;
+	}
+	#content{
+		width: auto;
+	}
+	.about-section .pages{
+		padding-top: 0;
+	}
+	.contact-wrap {
+    width: 80%;
+    margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 652px){
+	nav#navbar{
+		display: none;
+	}
+	div.nav-social{
+		display: none;
+	}
+	#diagram {
+    left: 12%;
+	}
+	.contact-wrap {
+    width: 100%;
+    margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 545px){
+	.masthead h1{
+    font-size: 30px;
+    line-height: 30px;
+	}
+	span.innerText{
+    font-size: 8px;
+    line-height:8px;
+	}
+	.logo-text {
+    font-size: 18px;
+	}
+	#diagram {
+    display: none;
+	}
+	.legend{
+		left: 25%;
+		display: block;
+		position: relative;
+	}
+	.project-tile-container .project-tile-image-container {
+		width: calc(100%);
+	}
+}
