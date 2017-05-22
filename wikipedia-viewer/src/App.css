@@ -1,0 +1,375 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Search Bar Container*/
+
+.front{
+    min-width: 300px;
+    width: 600px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.7s ease-in-out;
+}
+.front-description{
+    margin: 0 auto;
+    transition: all 0.7s ease-in-out;
+}
+.logo-front{
+    display: inline-block;
+    margin-right: 2rem;    
+    animation: 2s ease;
+    transition: all 0.7s ease-in-out;
+    transform-origin: center;
+    /*transform: rotateY(180deg);
+    transform-style: preserve-3d;*/
+}
+.logo-front:hover{
+    animation:spin 4s linear infinite;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.wiki_description{
+    color: #222023;
+    display: inline-block;
+    position: relative;
+    bottom: 2rem;
+    margin-left: 3rem;
+    transition: all 0.7s ease-in-out;
+}
+.wiki_description h1{
+    font-size: 3rem;
+}
+.wiki_description p{
+    font-size: 1.5rem;
+}
+.form-front{
+    background-color: #4ECDC4;
+    box-shadow: 8px 8px 10px rgba(15, 15, 15, 0.39);
+    border-radius:10px;
+    padding: 2rem;
+    border: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.input-front{
+    border-radius:10px;
+    padding: 0.5rem;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(15, 15, 15, 0.39);
+    border: none;
+    font-size: 1.5rem;
+    transition: all 0.7s ease-in-out;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.random{
+    padding:0.5em 0.5em ;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 25px;
+    font-size: 20px;
+    background: #fff;
+    color: #4ECDC4;
+    border: 1px solid #4ECDC4;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.random:focus,
+.random:hover{
+    outline: none;
+    color: #fff;
+    background: #4ECDC4;
+}
+.fa-display{
+    display: none;
+}
+
+ /*Styling Search bar*/
+.back-container{
+    width: 100%;
+    background-color: #4ECDC4;
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.39);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0px;
+    transition: all 0.7s ease-in-out;
+}
+.front-desc{
+    display: none;
+}
+ .back{
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
+     transition: all 0.7s ease-in-out;
+ }
+ .back-description{
+     display: inline-block;
+ }
+ .brand-logo{
+     width: 80px;
+     height: auto;
+ }
+
+ .brand-logo:hover{
+     animation:spin 4s linear infinite;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+ .form-back{
+     position: relative;
+     display: inline-block;
+     width: 70%;
+    /*margin-top:15px;*/
+    top: -28px;
+    margin-left: 15px;
+    transition: all 0.7s ease-in-out;
+ }
+
+.input-back{
+    border-radius:10px;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: all 0.7s ease-in-out;
+}
+.eks{
+    display: none;
+}
+
+.fa-times{
+    position: absolute;
+    display: block;
+    right: 23%;
+    color: #4ECDC4;
+    top: 26%;
+    font-weight: 400;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.random-back{
+    position: absolute;
+    display: inline-block;
+    padding:0.5em 0.5em ;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top:15px;
+    color: #4ECDC4;
+    background: #fff;
+    right: 15%;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.random-back:focus,
+.random-back:hover{
+    outline: none;
+    background:#4ECDC4;
+    color:  #fff;
+}
+
+/*Wiki Search  Items*/
+.search-result-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    font-family: 'Oxygen', sans-serif !important;
+}
+.search-results{
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+}
+.search-result-item{
+    background: #fff;
+    color: #222023;
+    line-height: 1.5em;
+    word-spacing: 0.5px;
+    padding: 2%;
+    cursor: pointer;
+    margin-top: 30px;
+    /*display: none;*/
+}
+.search-result-item:hover{
+    border-left: 10px solid #4ECDC4;
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 1192px){
+    .fa-times {
+    right: 22%;
+    }
+    .search-result-container{
+    width: 90%;
+    }
+    .random-back{
+        right: 12%;
+    }
+}
+@media only screen and (max-width: 999px){
+    .fa-times {
+    right: 20%;
+    }
+    .random-back{
+        right: 7%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .logo-front{
+    margin-right: 1rem;
+    margin-left: 5rem; 
+    height: auto;
+    width: 120px;
+    }
+    .wiki_description {
+    bottom: 1.5rem;
+    margin-left: 4rem;
+    transition: all 0.7s ease-in-out;
+}
+    .wiki_description h1 {
+    font-size: 2rem;
+    }
+    .form-front {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .search-result-container{
+    width: 100%;
+    margin-left: -20px;
+    }
+    .search-result-item:hover{
+    border-left: 5px solid #4ECDC4;
+    }
+    .fa-times {
+    right: 17%;
+    }
+    .random-back{
+        right: 2%;
+        margin-top: 10px;
+    }
+    .brand-logo {
+    width: 60px;
+    height: auto;
+    }
+    .form-back{
+        top: -15px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    .logo-front{
+    /*margin-right: 1rem;*/
+    margin-left: 3rem; 
+    height: auto;
+    width: 80px;
+    }
+    .wiki_description {
+    bottom: 1.1rem;
+    margin-left: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+    .wiki_description h1 {
+    font-size: 1.5rem;
+    }
+    .wiki_description p{
+        font-size: 1rem;
+    }
+    .form-front {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .front{
+        width: 400px;
+    }
+    .search-result-container{
+    font-size: 0.9rem;
+    }
+    .fa-times {
+    right: 13%;
+    }
+    .random-back{
+        right: -7%;
+        margin-top: 10px;
+    }
+    .brand-logo {
+    width: 60px;
+    height: auto;
+    }
+    .form-back{
+        top: -15px;
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .front{
+        width: 300px;
+    }
+    .logo-front{
+    /*margin-right: 1rem;*/
+    margin-left: 1rem; 
+    height: auto;
+    width: 70px;
+    }
+    .wiki_description {
+    bottom: 0.5rem;
+    margin-left: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+    .wiki_description h1 {
+    font-size: 1.5rem;
+    }
+    .wiki_description p{
+        font-size: 1rem;
+    }
+    .form-front {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .random{
+        margin-left: 35%;
+        font-size: 1rem;
+    }
+    .input-front{
+    padding: 0.2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    }
+    .brand-logo{
+        margin-left: 10px;
+    }
+    .form-back {
+    width: 50%;
+    }
+    .fa-times {
+    right: 30%;
+    }
+    .random-back{
+        right: 7%;
+        margin-top: 10px;
+    }
+    .back{
+        width: 100%;
+    }
+}

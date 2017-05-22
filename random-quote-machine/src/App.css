@@ -1,0 +1,104 @@
+body{
+  font-family: 'Quicksand', 'Open sans'!important;
+}
+.color-transition{
+    transition: background-color 1.5s ease-in-out,color 3s ease, opacity 1.5s ease-in-out;
+}
+
+.App{
+    background-color: rgb(255, 127, 80);
+    height: 100vh;
+    width: 100%;
+}
+.QuoteContainer{
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  padding: 20px 10px;
+  border-radius: 1% 1%;
+  background-color: #f5f5f5;
+}
+.QuoteBox{
+  position: absolute;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom:50px;
+}
+.quote{
+  font-weight: 500;
+  font-size: 1.75em;
+}
+.QuoteBox{
+  height: 100%;
+  width: 100%;
+}
+.fa-twitter, .nextButton{
+    background:rgb(255, 127, 80);
+    color: #fff;
+  }
+  .fa-twitter:hover, .nextButton:hover{
+    opacity: 0.8;
+    transition: background-color 1s ease-in-out;
+  }
+  .fa-twitter, .nextButton{
+    opacity: 1;
+    transition: background-color 1s ease-in-out;
+  }
+.fa-twitter{
+  font-size: 2em;
+  margin-left: 10px;
+  border-radius: 2px;
+  padding: 0.2em 0.3em;
+}
+.fa-quote-left{
+  margin-right: 10px;
+}
+.fa-hashtag{
+  margin-right: 3px;
+}
+.quote,.author{
+    color: rgb(255, 127, 80);
+}
+.author{
+  position: absolute;
+  right: 30px;
+  font-size: 1.2em;
+}
+
+.nextButton{
+  right: 25px;
+  position: absolute;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1.1em;
+  padding: 8px 18px 6px 18px;
+  opacity: 1;
+  cursor: pointer;
+}
+.copy{
+  color: #fff;
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+.fa-heart{
+  color: #e31b23;
+}
+@media screen and (max-width: 520px) {
+    .QuoteContainer{
+      width: 400px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .QuoteContainer{
+      width: 330px;
+    }
+}

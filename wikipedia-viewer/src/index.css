@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+/*linear-gradient(30deg, #E52850,#D32CAD);*/
+body{
+    font-family: 'Overlock SC', cursive !important;
+    /*font-family: 'EB Garamond', serif !important;*/
+    /*background: linear-gradient(30deg, #E52850,#D32CAD) center fixed;*/
+    background: linear-gradient(30deg, #f2f2f2,#f3f3f3) center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
