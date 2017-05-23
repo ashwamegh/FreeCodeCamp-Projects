@@ -59,7 +59,7 @@ class App extends Component {
                  <a href="https://shashank7200.github.io" target="_blank" style={linkStyle}>Shashank Shekhar</a>
  				   </div>
         </div>
-        <GitHubForkRibbon href="//www.google.com"
+        <GitHubForkRibbon href="//github.com/shashank7200/FreeCodeCamp-Projects/tree/master/local-weather"
                     target="_blank"
                     color="green"
                     position="right">
