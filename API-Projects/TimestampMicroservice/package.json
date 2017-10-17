@@ -1,0 +1,27 @@
+{
+  "name": "timestampmicroservice",
+  "version": "1.0.0",
+  "description": "An api project from freecodecamp, handles api calls",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "API",
+    "FreeCodeCamp",
+    "Timestamp"
+  ],
+  "author": "Shashank Shekhar",
+  "license": "ISC",
+  "dependencies": {
+    "chrono-node": "^1.3.5",
+    "express": "^4.16.2",
+    "moment": "^2.19.1",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
