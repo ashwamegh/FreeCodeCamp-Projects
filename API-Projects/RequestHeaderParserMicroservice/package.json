@@ -1,0 +1,26 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "Request header parser microservice FCC project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node app.js",
+    "dev": "./node_modules/.bin/nodemon app.js"
+  },
+  "keywords": [
+    "API",
+    "REQUEST",
+    "HEADERS",
+    "Node"
+  ],
+  "author": "Shashank Shekhar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
