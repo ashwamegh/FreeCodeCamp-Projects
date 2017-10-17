@@ -1,0 +1,43 @@
+extends layout
+
+block content
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title User stories:
+					ol
+						li
+							blockquote
+								span I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+						li
+							blockquote
+								span If it does, it returns both the Unix timestamp and the natural language form of that date.
+						li
+							blockquote
+								span If it does not contain a date or Unix timestamp, it returns null for those properties
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Example usage:
+					ul
+						li
+							blockquote
+								a.white-text(href="December%2015,%202015", rel="no-opener") #{url}December%2015,%202015
+						li
+							blockquote
+								a.white-text(href="14501376005", rel="no-opener") #{url}14501376005
+
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Example output:
+					ul
+						li
+							blockquote
+								a(href="https://timestamp-ms.herokuapp.com/December%2015,%202015", rel="no-opener")
+						li
+							blockquote
+								span { "unix": 1450137600, "natural": "December 15, 2015" }
