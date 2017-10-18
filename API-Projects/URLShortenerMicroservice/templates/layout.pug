@@ -1,0 +1,27 @@
+doctype html(lang='en')
+
+head
+	meta(charset='utf8')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	meta(http-equiv='x-ua-compatible', content='ie=edge')
+	title URL Shortener Microservice
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css')
+	link(rel='stylesheet', href='/stylesheets/layout.css')
+	link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+
+body
+	div.navbar-fixed
+		nav
+			div.nav-wrapper
+				a(href="/").brand-logo.center URL Shortener Microservice
+				
+	main
+		block content
+
+	// Footer
+	footer.page-footer
+		div.footer-copyright
+			div.container  © 2017 Copyright Text
+				a.grey-text.text-lighten-4.right(href='https://shashank7200.github.io') Link to other projects
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js')

@@ -1,0 +1,63 @@
+extends layout
+
+block content
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title User stories:
+					ol
+						li
+							blockquote
+								span I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+						li
+							blockquote
+								span When I visit that shortened URL, it will redirect me to my original link.
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Example creation usage:
+					ul
+						li
+							blockquote
+								code
+									a.white-text(href="new/https://www.google.com", rel="no-opener") #{url}new/https://www.google.com
+						li
+							blockquote
+								code
+									a.white-text(href="new/http://foo.com:80", rel="no-opener") #{url}new/http://foo.com:80
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Example creation output:
+					ul
+						li
+							blockquote
+								a(href="https://timestamp-ms.herokuapp.com/December%2015,%202015", rel="no-opener")
+						li
+							blockquote
+								code { "original_url":"http://foo.com:80", "short_url":"#{url}8170" }
+	
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Usage:
+					ul
+						li
+							blockquote
+								code
+									a.white-text(href="2871", rel="no-opener") #{url}2871
+
+	div.row
+		div.col.s12.m12
+			div.card.blue-grey.darken-1
+				div.card-content.white-text
+					span.card-title Will redirect to:
+					ul
+						li
+							blockquote
+								code
+									a.white-text(href="https://www.google.com/", rel="no-opener") https://www.google.com/
