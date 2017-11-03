@@ -42,7 +42,7 @@ mongodb.connect(url, (err, database) => {
       if (validUrl.isUri(req.params[0])) {
         let docCount = shortid.generate();
         const hostUrl = req.protocol + '://' + req.get('host');
-        const shortUrl = hostUrl + '/' + docCount;
+        const shortUrl = hostUrl + '/u/' + docCount;
 
         collection.insert({
           original_url: req.params[0],
@@ -63,9 +63,9 @@ mongodb.connect(url, (err, database) => {
 
     // Route to redirect starts here
 
-    app.get('/:shorturl', (req, res) => {
+    app.get('/u/:shorturl', (req, res) => {
       const hostUrl = req.protocol + '://' + req.get('host');
-      const shortUrl = hostUrl + '/' + req.params.shorturl;
+      const shortUrl = hostUrl + '/u/' + req.params.shorturl;
       collection.find({ shorten_url: shortUrl }).toArray((err, doc) => {
         console.log(doc);
         if (err) {
