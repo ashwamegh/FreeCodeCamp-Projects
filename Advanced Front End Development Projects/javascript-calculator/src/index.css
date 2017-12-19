@@ -2,4 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(to bottom, 	#FAA4A3 0%, #FAA4A3 50%, #2E344C 50%, #2E344C 100%) no-repeat;
+  height: 100vh;
 }
+
