@@ -1,0 +1,77 @@
+.App{
+  width: 350px;
+  min-width: 350px;
+  height: 650px;
+  background: #FFFFFF;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.App #display{
+  height: 30%;
+  box-shadow:  0 8px 6px -6px #2e2e2e33;
+  margin: 20px;
+  text-align: right;
+  font-size: 40px;
+  position: relative;
+}
+
+.App #controls{
+  height: 70%;
+}
+
+.App #controls #calc_buttons{
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 50px;
+  font-size: 40px;
+  color: #4342567a;
+  margin-top: 20px;
+}
+
+.App #controls #calc_buttons li{
+  display: inline-block;
+  width: 25%;
+  height: 80px;
+  cursor: pointer;
+}
+
+#c, #brackets, #brackets, #modulo, #division, #multiply, #subtract, #addition{
+  color: #FAA4A3;
+}
+
+#equal{
+  background-color: #FAA4A3;
+  color: #fff;
+  margin: 0 auto;
+  width: 110px !important;
+  height: 50px !important;
+  text-align: center;
+  box-shadow: 0 8px 6px -6px #2e2e2e82;
+}
+
+#equal span{
+  width: 100%;
+}
+
+.operation_display p{
+  color: #2e2e2ea6;
+}
+
+.history{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #4342567a;
+  width: 100%;
+}
+
+.history p{
+  width: 100%;
+}
+#history_title{
+  float: left;
+}
