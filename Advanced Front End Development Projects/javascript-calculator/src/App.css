@@ -60,6 +60,7 @@
 
 .operation_display p{
   color: #2e2e2ea6;
+  letter-spacing: 4px;
 }
 
 .history{
@@ -67,6 +68,8 @@
   text-transform: uppercase;
   color: #4342567a;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .history p{
