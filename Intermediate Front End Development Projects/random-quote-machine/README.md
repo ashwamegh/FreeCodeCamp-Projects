@@ -1,5 +1,7 @@
 # Build a Random Quote Machine
 
+> [Visit the application](https://random-quotes-machine.surge.sh/)
+
 ## Objective
 
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/ONjoLe/.

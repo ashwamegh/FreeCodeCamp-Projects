@@ -1,6 +1,6 @@
 ## FCC: Product Landing Page
 
-### Visit the page: https://shashank7200.github.io/FreeCodeCamp-Projects/Zephyr%20Edited/
+### [Visit the page here](https://ashwamegh.github.io/FreeCodeCamp-Projects/Basic%20Front%20End%20Development%20Projects/Zephyr%20Edited/)
 
 ### Screenshot:
 

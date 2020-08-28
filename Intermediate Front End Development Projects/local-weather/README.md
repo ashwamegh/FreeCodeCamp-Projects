@@ -1,5 +1,7 @@
 # Show the Local Weather
 
+> [Visit the application](https://local-weather-app.surge.sh/)
+
 ## Objective
 Build an app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV.
 
