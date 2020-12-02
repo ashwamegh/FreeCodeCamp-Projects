@@ -8,7 +8,8 @@ const validUrl = require('valid-url');
 dotenv.load();
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
-const url = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds123695.mlab.com:23695/url-shortener`
+const url = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds121182.mlab.com:21182/url-shortener`
+console.log("url", url)
 const app = express();
 let db, collection;
 
@@ -18,7 +19,7 @@ app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'pug');
 
 
-mongodb.connect(url, (err, database) => {
+mongodb.connect(url, (err, client) => {
   const errorMessage = JSON.stringify({
     errorCode: '500',
     message: "Encountered Server Error. Please refrewsh!"
@@ -27,8 +28,8 @@ mongodb.connect(url, (err, database) => {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
-    db = database;
-    collection = database.collection('urls');
+	db = client.db('url-shortener');
+    collection = db.collection('urls');
     app.listen(3000, () => console.log("Server is listening at http://localhost:3000"));
 
     // Root route starts
